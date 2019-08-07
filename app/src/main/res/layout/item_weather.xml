@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="weather"
+            type="com.practice.weather.models.entity.Weather" />
+
+        <variable
+            name="weatherViewModel"
+            type="com.practice.weather.view.ui.details.weather.WeatherDetailViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium">
+
+        <LinearLayout
+            android:id="@+id/listItemWeather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:gravity="bottom"
+                    android:text="@{weather.name}"
+                    android:textSize="@dimen/text_size_medium"
+                    tools:text="Melbourne" />
+
+                <TextView
+                    android:id="@+id/weatherTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:text="@{weather.weatherCondition}"
+                    android:textSize="@dimen/text_size_small"
+                    tools:text="Sunny" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/temperatureTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:gravity="right|center_vertical"
+                android:text='@{weather.weatherTemp + "°"}'
+                android:textColor="@color/text_light_blue"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="@{weather.weatherTemp != null ? View.VISIBLE: View.GONE}"
+                tools:text="20°" />
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:id="@+id/divider"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"></View>
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.florent37:glidepalette:2.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/455f8a36f33f6a23da1fb91da4e6538b/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/455f8a36f33f6a23da1fb91da4e6538b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/455f8a36f33f6a23da1fb91da4e6538b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/glidepalette/2.1.2/908ff23c5acdd9c74fed23e307094498cb715244/glidepalette-2.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

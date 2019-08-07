@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Weather</string>
+  <string name="menu_weather">Weather</string>
+  <string name="tab_a_to_z">A-Z</string>
+  <string name="tab_temperature">Temperature</string>
+  <string name="tab_last_updated">Last Updated</string>
+</resources>
